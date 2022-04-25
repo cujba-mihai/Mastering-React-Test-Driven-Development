@@ -10,31 +10,33 @@ export const Appointment = ({ customer, startsAt }) => (
     <h1>Today's appointment at {appointmentTimeOfDay(startsAt)}</h1>
     <table>
 
-      <tr>
-        <th>Customer</th>
-        <td>{customer.firstName}</td>
-      </tr>
+      <tbody>
+        <tr>
+          <th>Customer</th>
+          <td>{customer.firstName}</td>
+        </tr>
 
-      <tr>
-        <th>Phone number </th>
-        <td>{customer.phoneNumber}</td>
-      </tr>
+        <tr>
+          <th>Phone number</th>
+          <td>{customer.phoneNumber}</td>
+        </tr>
 
 
-      <tr>
-        <th>Stylist</th>
-        <td>{customer.stylist}</td>
-      </tr>
+        <tr>
+          <th>Stylist</th>
+          <td>{customer.stylist}</td>
+        </tr>
 
-      <tr>
-        <th>Service</th>
-        <td>{customer.service}</td>
-      </tr>
+        <tr>
+          <th>Service</th>
+          <td>{customer.service}</td>
+        </tr>
 
-      <tr>
-        <th>Notes</th>
-        <td>{customer.notes}</td>
-      </tr>
+        <tr>
+          <th>Notes</th>
+          <td>{customer.notes}</td>
+        </tr>
+      </tbody>
 
     </table>
   </div>
