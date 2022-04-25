@@ -4,11 +4,15 @@
   "description": "Appointments system",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "example.com"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +20,12 @@
     "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "jest": "^24.1.0"
+    "@faker-js/faker": "^6.2.0",
+    "babel-loader": "^8.2.5",
+    "faker": "^6.6.6",
+    "jest": "^24.1.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "@babel/runtime": "^7.3.4",
